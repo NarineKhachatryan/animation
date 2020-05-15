@@ -1,0 +1,21 @@
+div.animation{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation-name:one;
+    animation-duration: 5s;
+    animation-direction:reverse;
+    animation-timing-function: ease;
+    transition: width 5s;
+}
+div.animation:hover {
+    width: 500px;
+    height:500px;
+    background-color: yellow;
+  }
+@keyframes one{
+    0%{background-color: blueviolet;}
+    100%{background-color:yellow;}
+    from{width: 200px;} to{width: 500px;}
+    from{height: 200px;} to{height: 500px;}
+}
